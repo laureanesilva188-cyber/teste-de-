@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conhecendo sobre Teste de Software</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#2b1055,#7597de);
+    color:#fff;
+}
+
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:rgba(0,0,0,.2);
+    backdrop-filter:blur(10px);
+}
+
+header h1{
+    font-size:3rem;
+    animation:aparecer 1s ease;
+}
+
+
+section{
+    width:85%;
+    margin:40px auto;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+
+section:hover{
+    transform:translateY(-8px);
+}
+
+
+h2{
+    color:#d8b4fe;
+    margin-bottom:20px;
+    border-left:6px solid #c084fc;
+    padding-left:10px;
+}
+
+
+h3{
+    color:#f3e8ff;
+    margin-top:20px;
+}
+
+
+p{
+    line-height:1.7;
+    margin:15px 0;
+}
+
+
+ul{
+    margin-left:25px;
+}
+
+
+li{
+    margin:10px 0;
+}
+
+
+img{
+    display:block;
+    width:100%;
+    max-width:650px;
+    margin:25px auto;
+    border-radius:15px;
+    transition:.5s;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+
+img:hover{
+    transform:scale(1.04);
+}
+
+
+iframe{
+    display:block;
+    width:100%;
+    max-width:800px;
+    height:450px;
+    margin:25px auto;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.5);
+}
+
+
+input[type="radio"]{
+    margin:8px;
+}
+
+
+button{
+
+    margin-top:20px;
+    padding:14px 28px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(45deg,#9333ea,#7c3aed);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.08);
+    box-shadow:0 0 20px #c084fc;
+
+}
+
+
+#resultado{
+
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:#f5d0fe;
+
+}
+
+
+footer{
+
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    background:rgba(0,0,0,.25);
+
+}
+
+
+@keyframes aparecer{
+
+from{
+    opacity:0;
+    transform:translateY(-30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>Conhecendo sobre Teste de Software</h1>
+
+</header>
+
+
+
+<section>
+
+<h2>O que é teste de software?</h2>
+
+<p>
+Teste de software é o processo de verificar se um sistema funciona corretamente,
+identificando erros antes que ele seja entregue ao usuário. O objetivo é garantir
+qualidade, segurança e confiabilidade.
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>Qual a importância de testar?</h2>
+
+<ul>
+
+<li>Evita falhas e prejuízos.</li>
+<li>Melhora a qualidade do sistema.</li>
+<li>Aumenta a segurança.</li>
+<li>Garante melhor experiência para o usuário.</li>
+<li>Reduz custos com correções futuras.</li>
+
+</ul>
+
+</section>
+
+
+
+<section>
+
+<h2>Exemplos de sistemas que falharam</h2>
+
+
+<h3>1. Ariane 5 (1996)</h3>
+
+<img src="IMG/foguete_ariane.jpg" alt="Foguete Ariane 5">
+
+<p>
+O foguete Ariane 5 explodiu cerca de 40 segundos após o lançamento.
+A causa foi a reutilização de um código do Ariane 4, causando um erro
+de overflow.
+</p>
+
+
+
+<h3>2. Therac-25 (Década de 1980)</h3>
+
+<img src="IMG/Therac-25.jpg" alt="Therac-25">
+
+<p>
+O Therac-25 era um equipamento de radioterapia. Falhas no software
+permitiram doses incorretas de radiação.
+</p>
+
+
+
+<h3>3. Knight Capital (2012)</h3>
+
+<img src="IMG/Knight Capital (2012).jpg" alt="Knight Capital">
+
+<p>
+Um erro em uma atualização fez o sistema enviar milhares de ordens
+incorretas para a bolsa de valores.
+</p>
+
+
+
+<h3>4. Healthcare.gov (2013)</h3>
+
+<img src="IMG/Healthcare.gov (2013).jpg" alt="Healthcare.gov">
+
+<p>
+O portal apresentou falhas no lançamento, impedindo usuários de realizar
+cadastros.
+</p>
+
+
+
+<h3>5. Cyberpunk 2077 (2020)</h3>
+
+<img src="IMG/Cyberpunk 2077 (2020).jpg" alt="Cyberpunk 2077">
+
+<p>
+O jogo foi lançado com muitos bugs e problemas de desempenho.
+</p>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>Vídeo Explicativo</h2>
+
+
+<iframe
+src="https://www.youtube.com/embed/8GkAajcRxuw"
+allowfullscreen>
+</iframe>
+
+
+</section>
+
+
+
+
+<section>
+
+
+<h2>Short sobre Teste de Software</h2>
+
+
+<iframe
+src="https://www.youtube.com/embed/mfZMf0bLWME"
+allowfullscreen>
+</iframe>
+
+
+</section>
+
+
+
+
+<section id="quiz">
+
+
+<h2>Quiz</h2>
+
+
+<form id="quizForm">
+
+
+<img src="IMG/teste_software.png" alt="Teste de Software">
+
+
+<p><strong>1. O que é teste de software?</strong></p>
+
+<input type="radio" name="q1" value="certo">
+Processo de identificar e corrigir falhas antes da entrega.<br>
+
+<input type="radio" name="q1" value="errado">
+Apenas criar a interface do sistema.<br>
+
+<input type="radio" name="q1" value="errado">
+Instalar programas no computador.<br><br>
+
+
+
+<p><strong>2. Qual é a principal importância de testar um software?</strong></p>
+
+<input type="radio" name="q2" value="certo">
+Garantir qualidade, segurança e reduzir erros.<br>
+
+<input type="radio" name="q2" value="errado">
+Aumentar o tamanho do sistema.<br>
+
+<input type="radio" name="q2" value="errado">
+Deixar o programa mais lento.<br><br>
+
+
+
+<p><strong>3. Qual sistema ficou conhecido por explodir devido a um erro de software?</strong></p>
+
+<input type="radio" name="q3" value="certo">
+Ariane 5.<br>
+
+<input type="radio" name="q3" value="errado">
+Healthcare.gov.<br>
+
+<input type="radio" name="q3" value="errado">
+Cyberpunk 2077.<br><br>
+
+
+
+<p><strong>4. Qual tipo de teste verifica pequenas partes do código?</strong></p>
+
+<input type="radio" name="q4" value="certo">
+Teste Unitário.<br>
+
+<input type="radio" name="q4" value="errado">
+Teste de Sistema.<br>
+
+<input type="radio" name="q4" value="errado">
+Teste de Aceitação.<br><br>
+
+
+
+<p><strong>5. O teste de regressão tem como objetivo:</strong></p>
+
+<input type="radio" name="q5" value="certo">
+Verificar se alterações criaram novos erros.<br>
+
+<input type="radio" name="q5" value="errado">
+Melhorar apenas o design do sistema.<br>
+
+<input type="radio" name="q5" value="errado">
+Aumentar a velocidade da internet.<br><br>
+
+
+</form>
+
+
+<h3 id="resultado"></h3>
+
+
+<button onclick="corrigir()">
+Ver Resultado
+</button>
+
+
+<button onclick="reiniciarQuiz()">
+Tentar novamente
+</button>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>Teste de Software - 2026</p>
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function corrigir(){
+
+
+let acertos = 0;
+
+
+for(let i=1;i<=5;i++){
+
+
+let resposta=document.querySelector(
+'input[name="q'+i+'"]:checked'
+);
+
+
+if(resposta && resposta.value==="certo"){
+
+acertos++;
+
+}
+
+
+}
+
+
+
+let mensagem="";
+
+
+if(acertos===5){
+
+mensagem="🏆 Parabéns! Você acertou todas as questões!";
+
+}
+
+else if(acertos>=3){
+
+mensagem="👏 Muito bom! Você acertou "+acertos+" de 5 questões.";
+
+}
+
+else{
+
+mensagem="📚 Você acertou "+acertos+" de 5 questões. Revise o conteúdo e tente novamente!";
+
+}
+
+
+
+document.getElementById("resultado").innerHTML=mensagem;
+
+
+}
+
+
+
+
+
+function reiniciarQuiz(){
+
+
+let respostas=document.querySelectorAll(
+'input[type="radio"]'
+);
+
+
+respostas.forEach(function(resposta){
+
+resposta.checked=false;
+
+});
+
+
+document.getElementById("resultado").innerHTML="";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
